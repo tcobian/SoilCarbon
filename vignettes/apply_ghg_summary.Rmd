@@ -1,0 +1,14 @@
+---
+title: "apply_ghg_summary"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{apply_ghg_vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
