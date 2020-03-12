@@ -1,7 +1,8 @@
 #' Green House Gas Conversion
 #'
-#'@param This function will take inputs of either kg of Carbon, Methane, or Nitrous Oxide
+#' @param This function will take inputs of either kg of Carbon, Methane, or Nitrous Oxide
 #' @return The function will return the conversion to kg of CO2e
+#' @example ghg("N2O", 20)
 #' @author Tyler D. Cobian
 
 

@@ -1,6 +1,10 @@
 #' Soil Erosion Rates
 #'
-#' This function will output the amount of total topsoil eroded when given an area of land in hectars and time elapsed. The rate of soil erosion is based off the averge yearly erosion rate of agricultural lands in the United States
+#' @param This function will take inputs of land are in units of hecatres and a unit of time in year
+#' @return This function will return the amount of top soil lost on kg after the specified time period
+#' @example soil_erosion(10, 1)
+#' @references
+#' @author Tyler D. Cobian
 
 
 
