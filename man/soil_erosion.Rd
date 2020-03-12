@@ -1,16 +1,13 @@
 \name{soil_erosion}
 \alias{soil_erosion}
-%- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
 }
 \description{
-%%  ~~ A concise (1-5 lines) description of what the function does. ~~
+Calculation for the erosion of top soil in the units of kg of top soil lost
 }
 \usage{
 soil_erosion(area, time)
 }
-%- maybe also 'usage' for other objects documented here.
 \arguments{
   \item{area}{
 %%     ~~Describe \code{area} here~~
@@ -50,7 +47,7 @@ soil_erosion(area, time)
 ##--	or do  help(data=index)  for the standard data sets.
 
 ## The function is currently defined as
-function (area, time) 
+function (area, time)
 {
     erosion = area * time * 1.9
     return(erosion)
