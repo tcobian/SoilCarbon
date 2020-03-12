@@ -1,4 +1,6 @@
 #' Green House Gas Conversion
+#'
+#' @param This function will take inputs of either kg of Carbon, Methane, or Nitrous Oxide and covnert them into the metric of kg of CO2e
 
 
 
