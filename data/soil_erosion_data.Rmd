@@ -1,0 +1,28 @@
+---
+title: "soil_erosion_data"
+author: "Tyler Cobian"
+date: "3/12/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Make a list to represent 100 year on a 10 acre plot of land
+```{r}
+time<- data.frame(year = c(1:100))
+land_area<- 10
+
+soil_erosion_data<- data.frame(cbind(land_area, time))
+```
+
+```{r}
+soil_erosion_data$erosion<- soil_erosion(area = land_area, time = time)
+```
+
+Run data into the package
+```{r}
+use_data(soil_erosion_data, pkg = SoilCarbon)
+```
+

@@ -9,7 +9,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Make a sample data set of soil properties
+Make a sample data set of a 10 hecatre plot of land that experiences soil erosion dectated in the `soil_erosion()` function
 ```{r}
 bulk_density = rnorm(mean = 0.71, sd = 0.3, n = 100)
 
