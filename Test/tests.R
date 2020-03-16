@@ -16,13 +16,13 @@ test_that("ghg_posotive_value",{
 ### Tests for the soil_erosion function
 # make sure that area and time value must be posotive
 
-test_that("land_area_greater_0",{
-  expect_true(soil_erosion(area > 0))
+test_that("soil_erosion_1",{
+  expect_true(soil_erosion(area = 10, time = 5), 95)
 })
 
 
-test_that("time_posotive", {
-  expect_true(soil_erosion(time > 0))
+test_that("soil_erosion_2", {
+  expect_true(soil_erosion(area = 20, time = 2), 76)
 })
 
 
@@ -34,7 +34,7 @@ test_that("soil_erosion_works",
                         })
 
 
-test_file()
+test_file("Test/tests.R")
 
 
 
