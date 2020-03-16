@@ -21,12 +21,12 @@ test_that("ghg_N2O",{
 # make sure that area and time value must be posotive
 
 test_that("soil_erosion_1",{
-  expect_true(soil_erosion(area = 10, time = 5), 95)
+  expect_equal(soil_erosion(area = 10, time = 5), 95)
 })
 
 
 test_that("soil_erosion_2",{
-  expect_true(soil_erosion(area = 20, time = 2), 76)
+  expect_equal(soil_erosion(area = 20, time = 2), 76)
 })
 
 
