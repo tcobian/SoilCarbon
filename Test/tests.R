@@ -26,9 +26,12 @@ test_that("time_posotive", {
 })
 
 
+erosion_data = data.frame(land = 10, time = 1:10)
+erosion_data$erosion<- soil_erosion(area = erosion_data$land, time = erosion_data$time)
+
 test_that("soil_erosion_works",
-          {erosion_data = data.frame(land = 10, time = 1:10)
-          expect_true(soil_erosion(erosion_data$land, erosion_data$time))})
+          {expect_equal(mean(erosion_data$erosion), 104.5)
+                        })
 
 
 test_file()
